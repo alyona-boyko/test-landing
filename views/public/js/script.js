@@ -1,4 +1,3 @@
-@@include('wow.min.js');
 new WOW().init();
 
 var totalAmount = 1000;
