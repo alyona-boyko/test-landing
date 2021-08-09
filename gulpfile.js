@@ -30,8 +30,7 @@ let { src, dest } = require('gulp'),
         gulp = require('gulp'),
         browsersync = require("browser-sync").create(),
         fileinclude = require("gulp-file-include"),
-        del = require("del"),
-        uglify = require("gulp-uglify-es").default,
+        // del = require("del"),
         imagemin = require("gulp-imagemin"),
         ttf2woff = require("gulp-ttf2woff"),
         ttf2woff2 = require("gulp-ttf2woff2");
@@ -97,7 +96,7 @@ function watchFiles(params){
 }
 
 function clean(params){
-    return del(path.clean);
+    // return del(path.clean);
 }
 
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
